@@ -1,284 +1,438 @@
-
 <!DOCTYPE html>
 <html>
+
 <head>
-<title>W3.CSS Template</title>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/5/w3.css">
-<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-blue-grey.css">
-<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Open+Sans'>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<style>
-html, body, h1, h2, h3, h4, h5 {font-family: "Open Sans", sans-serif}
-</style>
+  <title>W3.CSS Template</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/5/w3.css">
+  <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-blue-grey.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <style>
+    html,
+    body,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5 {
+      font-family: "Roboto", sans-serif;
+      font-weight: 520;
+    }
+
+    .hidden {
+      display: none;
+    }
+  </style>
 </head>
+
 <body class="w3-theme-l5">
 
-<!-- Navbar -->
-<div class="w3-top">
- <div class="w3-bar w3-theme-d2 w3-left-align w3-large">
-  <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-large w3-hover-white w3-large w3-theme-d2" href="javascript:void(0);" onclick="openNav()"><i class="fa fa-bars"></i></a>
-  <a href="#" class="w3-bar-item w3-button w3-padding-large w3-theme-d4"><i class="fa fa-home w3-margin-right"></i>Logo</a>
-  <a href="#" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white" title="News"><i class="fa fa-globe"></i></a>
-  <a href="#" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white" title="Account Settings"><i class="fa fa-user"></i></a>
-  <a href="#" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white" title="Messages"><i class="fa fa-envelope"></i></a>
-  <div class="w3-dropdown-hover w3-hide-small">
-    <button class="w3-button w3-padding-large" title="Notifications"><i class="fa fa-bell"></i><span class="w3-badge w3-right w3-small w3-green">3</span></button>     
-    <div class="w3-dropdown-content w3-card-4 w3-bar-block" style="width:300px">
-      <a href="#" class="w3-bar-item w3-button">One new friend request</a>
-      <a href="#" class="w3-bar-item w3-button">John Doe posted on your wall</a>
-      <a href="#" class="w3-bar-item w3-button">Jane likes your post</a>
-    </div>
-  </div>
-  <a href="#" class="w3-bar-item w3-button w3-hide-small w3-right w3-padding-large w3-hover-white" title="My Account">
-    <img src="https://w3schools.com/w3images/avatar2.png" class="w3-circle" style="height:23px;width:23px" alt="Avatar">
-  </a>
- </div>
-</div>
-
-<!-- Navbar on small screens -->
-<div id="navDemo" class="w3-bar-block w3-theme-d2 w3-hide w3-hide-large w3-hide-medium w3-large">
-  <a href="#" class="w3-bar-item w3-button w3-padding-large">Link 1</a>
-  <a href="#" class="w3-bar-item w3-button w3-padding-large">Link 2</a>
-  <a href="#" class="w3-bar-item w3-button w3-padding-large">Link 3</a>
-  <a href="#" class="w3-bar-item w3-button w3-padding-large">My Profile</a>
-</div>
-
-<!-- Page Container -->
-<div class="w3-container w3-content" style="max-width:1400px;margin-top:80px">    
-  <!-- The Grid -->
-  <div class="w3-row">
-    <!-- Left Column -->
-    <div class="w3-col m3">
-      <!-- Profile -->
-      <div class="w3-card w3-round w3-white">
-        <div class="w3-container">
-         <h4 class="w3-center">My Profile</h4>
-         <p class="w3-center"><img src="https://w3schools.com/w3images/avatar3.png" class="w3-circle" style="height:106px;width:106px" alt="Avatar"></p>
-         <hr>
-         <p><i class="fa fa-pencil fa-fw w3-margin-right w3-text-theme"></i> Designer, UI</p>
-         <p><i class="fa fa-home fa-fw w3-margin-right w3-text-theme"></i> London, UK</p>
-         <p><i class="fa fa-birthday-cake fa-fw w3-margin-right w3-text-theme"></i> April 1, 1988</p>
+  <!-- Navbar -->
+  <div class="w3-top">
+    <div class="w3-bar w3-theme-d2 w3-left-align w3-large">
+      <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-large w3-hover-white w3-large w3-theme-d2"
+        href="javascript:void(0);" onclick="openNav()"><i class="fa fa-bars"></i></a>
+      <a href="#" class="w3-bar-item w3-button w3-padding-large w3-theme-d4"><i
+          class="fa fa-home w3-margin-right"></i>Logo</a>
+      <a href="#" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white" title="News"><i
+          class="fa fa-globe"></i></a>
+      <a href="#" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white"
+        title="Account Settings"><i class="fa fa-user"></i></a>
+      <a href="#" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white" title="Messages"><i
+          class="fa fa-envelope"></i></a>
+      <div class="w3-dropdown-hover w3-hide-small">
+        <button class="w3-button w3-padding-large" title="Notifications"><i class="fa fa-bell"></i><span
+            class="w3-badge w3-right w3-small w3-green">3</span></button>
+        <div class="w3-dropdown-content w3-card-4 w3-bar-block" style="width:300px">
+          <a href="#" class="w3-bar-item w3-button">One new friend request</a>
+          <a href="#" class="w3-bar-item w3-button">John Doe posted on your wall</a>
+          <a href="#" class="w3-bar-item w3-button">Jane likes your post</a>
         </div>
       </div>
-      <br>
-      
-      <!-- Accordion -->
-      <div class="w3-card w3-round">
-        <div class="w3-white">
-          <button onclick="myFunction('Demo1')" class="w3-button w3-block w3-theme-l1 w3-left-align"><i class="fa fa-circle-o-notch fa-fw w3-margin-right"></i> My Groups</button>
-          <div id="Demo1" class="w3-hide w3-container">
-            <p>Some text..</p>
+      <a href="#" class="w3-bar-item w3-button w3-hide-small w3-right w3-padding-large w3-hover-white"
+        title="My Account">
+        <img src="https://w3schools.com/w3images/avatar2.png" class="w3-circle" style="height:23px;width:23px"
+          alt="Avatar">
+      </a>
+    </div>
+  </div>
+
+  <!-- Navbar on small screens -->
+  <div id="navDemo" class="w3-bar-block w3-theme-d2 w3-hide w3-hide-large w3-hide-medium w3-large">
+    <a href="#" class="w3-bar-item w3-button w3-padding-large">Link 1</a>
+    <a href="#" class="w3-bar-item w3-button w3-padding-large">Link 2</a>
+    <a href="#" class="w3-bar-item w3-button w3-padding-large">Link 3</a>
+    <a href="#" class="w3-bar-item w3-button w3-padding-large">My Profile</a>
+  </div>
+
+  <!-- Page Container -->
+  <div class="w3-container w3-content" style="max-width:1400px;margin-top:80px">
+    <!-- The Grid -->
+    <div class="w3-row">
+      <!-- Left Column -->
+      <div class="w3-col m3">
+        <!-- Profile -->
+        <div class="w3-card w3-round w3-white">
+          <div class="w3-container">
+            <h4 class="w3-center">My Profile</h4>
+            <p class="w3-center"><img src="https://w3schools.com/w3images/avatar3.png" class="w3-circle"
+                style="height:106px;width:106px" alt="Avatar"></p>
+            <hr>
+            <p><i class="fa fa-pencil fa-fw w3-margin-right w3-text-theme"></i> Designer, UI</p>
+            <p><i class="fa fa-home fa-fw w3-margin-right w3-text-theme"></i> London, UK</p>
+            <p><i class="fa fa-birthday-cake fa-fw w3-margin-right w3-text-theme"></i> April 1, 1988</p>
           </div>
-          <button onclick="myFunction('Demo2')" class="w3-button w3-block w3-theme-l1 w3-left-align"><i class="fa fa-calendar-check-o fa-fw w3-margin-right"></i> My Events</button>
-          <div id="Demo2" class="w3-hide w3-container">
-            <p>Some other text..</p>
+        </div>
+        <br>
+
+        <!-- Accordion -->
+        <div class="w3-card w3-round">
+          <div class="w3-white">
+            <button onclick="myFunction('Demo1')" class="w3-button w3-block w3-theme-l1 w3-left-align"><i
+                class="fa fa-circle-o-notch fa-fw w3-margin-right"></i> My Groups</button>
+            <div id="Demo1" class="w3-hide w3-container">
+              <p>Some text..</p>
+            </div>
+            <button onclick="myFunction('Demo2')" class="w3-button w3-block w3-theme-l1 w3-left-align"><i
+                class="fa fa-calendar-check-o fa-fw w3-margin-right"></i> My Events</button>
+            <div id="Demo2" class="w3-hide w3-container">
+              <p>Some other text..</p>
+            </div>
+            <button onclick="myFunction('Demo3')" class="w3-button w3-block w3-theme-l1 w3-left-align"><i
+                class="fa fa-users fa-fw w3-margin-right"></i> My Photos</button>
+            <div id="Demo3" class="w3-hide w3-container">
+              <div class="w3-row-padding">
+                <br>
+                <div class="w3-half">
+                  <img src="https://w3schools.com/w3images/lights.jpg" style="width:100%" class="w3-margin-bottom">
+                </div>
+                <div class="w3-half">
+                  <img src="https://w3schools.com/w3images/nature.jpg" style="width:100%" class="w3-margin-bottom">
+                </div>
+                <div class="w3-half">
+                  <img src="https://w3schools.com/w3images/mountains.jpg" style="width:100%" class="w3-margin-bottom">
+                </div>
+                <div class="w3-half">
+                  <img src="https://w3schools.com/w3images/forest.jpg" style="width:100%" class="w3-margin-bottom">
+                </div>
+                <div class="w3-half">
+                  <img src="https://w3schools.com/w3images/nature.jpg" style="width:100%" class="w3-margin-bottom">
+                </div>
+                <div class="w3-half">
+                  <img src="https://w3schools.com/w3images/snow.jpg" style="width:100%" class="w3-margin-bottom">
+                </div>
+              </div>
+            </div>
           </div>
-          <button onclick="myFunction('Demo3')" class="w3-button w3-block w3-theme-l1 w3-left-align"><i class="fa fa-users fa-fw w3-margin-right"></i> My Photos</button>
-          <div id="Demo3" class="w3-hide w3-container">
-         <div class="w3-row-padding">
-         <br>
-           <div class="w3-half">
-             <img src="https://w3schools.com/w3images/lights.jpg" style="width:100%" class="w3-margin-bottom">
-           </div>
-           <div class="w3-half">
-             <img src="https://w3schools.com/w3images/nature.jpg" style="width:100%" class="w3-margin-bottom">
-           </div>
-           <div class="w3-half">
-             <img src="https://w3schools.com/w3images/mountains.jpg" style="width:100%" class="w3-margin-bottom">
-           </div>
-           <div class="w3-half">
-             <img src="https://w3schools.com/w3images/forest.jpg" style="width:100%" class="w3-margin-bottom">
-           </div>
-           <div class="w3-half">
-             <img src="https://w3schools.com/w3images/nature.jpg" style="width:100%" class="w3-margin-bottom">
-           </div>
-           <div class="w3-half">
-             <img src="https://w3schools.com/w3images/snow.jpg" style="width:100%" class="w3-margin-bottom">
-           </div>
-         </div>
+        </div>
+        <br>
+
+        <!-- Interests -->
+        <div class="w3-card w3-round w3-white w3-hide-small">
+          <div class="w3-container">
+            <p>Interests</p>
+            <p>
+              <span class="w3-tag w3-small w3-theme-d5">News</span>
+              <span class="w3-tag w3-small w3-theme-d4">W3Schools</span>
+              <span class="w3-tag w3-small w3-theme-d3">Labels</span>
+              <span class="w3-tag w3-small w3-theme-d2">Games</span>
+              <span class="w3-tag w3-small w3-theme-d1">Friends</span>
+              <span class="w3-tag w3-small w3-theme">Games</span>
+              <span class="w3-tag w3-small w3-theme-l1">Friends</span>
+              <span class="w3-tag w3-small w3-theme-l2">Food</span>
+              <span class="w3-tag w3-small w3-theme-l3">Design</span>
+              <span class="w3-tag w3-small w3-theme-l4">Art</span>
+              <span class="w3-tag w3-small w3-theme-l5">Photos</span>
+            </p>
           </div>
-        </div>      
+        </div>
+        <br>
+
+        <!-- Alert Box -->
+        <div
+          class="w3-container w3-display-container w3-round w3-theme-l4 w3-border w3-theme-border w3-margin-bottom w3-hide-small">
+          <span onclick="this.parentElement.style.display='none'" class="w3-button w3-theme-l3 w3-display-topright">
+            <i class="fa fa-remove"></i>
+          </span>
+          <p><strong>Hey!</strong></p>
+          <p>People are looking at your profile. Find out who.</p>
+        </div>
+
+        <!-- End Left Column -->
       </div>
-      <br>
-      
-      <!-- Interests --> 
-      <div class="w3-card w3-round w3-white w3-hide-small">
-        <div class="w3-container">
-          <p>Interests</p>
+
+      <!-- Middle Column -->
+      <div class="w3-col m7">
+
+        <div class="w3-row-padding">
+          <div class="w3-col m12">
+            <div class="w3-card w3-round w3-white">
+              <div class="w3-container w3-padding">
+                <h6 class="w3-opacity">Social Media template by w3.css</h6>
+                <p contenteditable="true" class="w3-border w3-padding">Status: Feeling Blue</p>
+                <button type="button" class="w3-button w3-theme"><i class="fa fa-pencil"></i> &nbsp;Post</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="w3-container w3-card w3-white w3-round w3-margin"><br>
+          <img id="current-image" src="http://localhost/projects/test-blog/images/puppy.jpg" alt="Puppy"
+            class="w3-left  w3-margin-right" style="width:150px">
+          <span class="w3-right w3-opacity">1 min</span>
+          <h2 id="current-headline">Come Back Little Sheba</h2><br>
+          <hr class="w3-clear">
           <p>
-            <span class="w3-tag w3-small w3-theme-d5">News</span>
-            <span class="w3-tag w3-small w3-theme-d4">W3Schools</span>
-            <span class="w3-tag w3-small w3-theme-d3">Labels</span>
-            <span class="w3-tag w3-small w3-theme-d2">Games</span>
-            <span class="w3-tag w3-small w3-theme-d1">Friends</span>
-            <span class="w3-tag w3-small w3-theme">Games</span>
-            <span class="w3-tag w3-small w3-theme-l1">Friends</span>
-            <span class="w3-tag w3-small w3-theme-l2">Food</span>
-            <span class="w3-tag w3-small w3-theme-l3">Design</span>
-            <span class="w3-tag w3-small w3-theme-l4">Art</span>
-            <span class="w3-tag w3-small w3-theme-l5">Photos</span>
+
+          <div id="post">
+            In an earlier post I alluded to the names of our border collie dogs, the senior of which is Sheba. She was
+            so named after an old dog of my mother’s, but in turn this dog was named for a Hollywood Movie “Come Back,
+            Little Sheba”. Sheba disappears months before the start of the film and never appears. It is implied that
+            Sheba is presumed dead. It stars Burt Lancaster, and Shirley Booth, who got a Best Actress Oscar in 1953 for
+            it. I began to wonder if there is a term for such characters and yes Gemini. informed me thus
+
+            Yes, there is! That type of character is called an offstage character or an unseen character.
+            </p>
+            These characters are important to the plot and the development of other characters,
+            even though the audience never actually sees them. They might be mentioned in dialogue,
+            have actions attributed to them, or even influence the events of the play.
+            </p>
+            Here are some examples of famous offstage characters:
+
+            Godot in “Waiting for Godot”: The title character is the most famous example of an offstage character, whose
+            unseen presence drives the entire play.
+            Mr. Wickham’s father in “Pride and Prejudice”: While the character of Mr. Wickham is onstage, his father,
+            who worked for Mr. Darcy’s father, is only mentioned in dialogue. However, the elder Mr. Wickham’s past
+            relationship with the Darcy family is crucial to understanding Wickham’s motivations.
+            Rose’s fiancé in “The Importance of Being Earnest”: Though never seen, Cecily’s imaginary betrothed, Ernest,
+            plays a significant role in the comedic plot.
+            Offstage characters can serve a variety of purposes, such as:
+
+            <img src="https://w3schools.com/w3images/lights.jpg" style="width:30%; float: left; margin-right: 15px;">
+
+            </p>
+            Creating intrigue and suspense: The audience might wonder about their identity or motivations.
+            Developing other characters: Interactions with or discussions about the unseen character can reveal traits
+            and
+            motivations of the onstage characters.
+            Advancing the plot: Their actions, though offstage, can drive the events of the play.
+            Now as to Godot , it is a reworking by Samuel Beckett of his original work in French En attendant Godot.
+
+            It is alleged that originally Godot was meant to appear half way through the play, but the actor playing
+            Godot
+            failed to appear and so the two characters, Vladimir and Estragon were left to adlib the rest of the play.
+            True? I doubt it but I would love it to be so.
+
+            Adding to the AI effort I can think of Mr Papadopoulos, in Coronation Street who is referred to by Mr
+            Swindley
+            ( Arthur Lowe ). Papadopoulos is a greek clothing magnate who owns Miami Modes. Swindley is the manager.
+
+            Again Arthur Lowe in Dad’s Army, Mrs Mannering is never seen.
+            </p>
+            Google gives us
+
+            King Laius in Oedipus Rex: An offstage character in Sophocles’s play who is a driving force for action
+            Jason’s bride in Medea: An offstage character in Euripides’s play
+            Rosaline in Romeo and Juliet: An offstage character in Shakespeare’s play who highlights the predicament of
+            the two lovers
+            Off stage characters also exists in books ( again AI gives us )
+
+            Boo Radley in “To Kill a Mockingbird”: Boo is a recluse who never leaves his house, but his presence looms
+            large over the novel. He becomes a source of fascination and fear for the children, and his actions
+            ultimately
+            save Jem and Scout.
+
+            Mrs. Haverford in “Rebecca”: The deceased first wife of Maxim de Winter, Rebecca is a powerful offstage
+            character whose presence haunts the narrator and Manderley. Her influence shapes the entire plot, even
+            though
+            she is already dead.
+
+            Snape’s mother in the “Harry Potter” series: Eileen Prince, Severus Snape’s mother, is only mentioned in
+            passing and through memories, but her difficult relationship with his father and her magical abilities are
+            crucial to understanding Snape’s character and motivations.
+
+            I would add that in 1984 O’Brien plays a major part in the narrative, but it is unsure that he actually
+            exists.
+
+            For most of Atlas Shrugged we are unsure if John Galt exists, even though he drives the plot. ( yes, he
+            appears, after a few 1000 pages 😉 ).
+
+            That’s about it, but if you can think of any I’ve missed please leave a comment. Ta.
+
+          </div>
+
           </p>
-        </div>
-      </div>
-      <br>
-      
-      <!-- Alert Box -->
-      <div class="w3-container w3-display-container w3-round w3-theme-l4 w3-border w3-theme-border w3-margin-bottom w3-hide-small">
-        <span onclick="this.parentElement.style.display='none'" class="w3-button w3-theme-l3 w3-display-topright">
-          <i class="fa fa-remove"></i>
-        </span>
-        <p><strong>Hey!</strong></p>
-        <p>People are looking at your profile. Find out who.</p>
-      </div>
-    
-    <!-- End Left Column -->
-    </div>
-    
-    <!-- Middle Column -->
-    <div class="w3-col m7">
-    
-      <div class="w3-row-padding">
-        <div class="w3-col m12">
-          <div class="w3-card w3-round w3-white">
-            <div class="w3-container w3-padding">
-              <h6 class="w3-opacity">Social Media template by w3.css</h6>
-              <p contenteditable="true" class="w3-border w3-padding">Status: Feeling Blue</p>
-              <button type="button" class="w3-button w3-theme"><i class="fa fa-pencil"></i> &nbsp;Post</button> 
-            </div>
-          </div>
-        </div>
-      </div>
-      
-      <div class="w3-container w3-card w3-white w3-round w3-margin"><br>
-        <img src="https://w3schools.com/w3images/avatar2.png" alt="Avatar" class="w3-left w3-circle w3-margin-right" style="width:60px">
-        <span class="w3-right w3-opacity">1 min</span>
-        <h4>John Doe</h4><br>
-        <hr class="w3-clear">
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
           <div class="w3-row-padding" style="margin:0 -16px">
-            <div class="w3-half">
-              <img src="https://w3schools.com/w3images/lights.jpg" style="width:100%" alt="Northern Lights" class="w3-margin-bottom">
-            </div>
-            <div class="w3-half">
-              <img src="https://w3schools.com/w3images/nature.jpg" style="width:100%" alt="Nature" class="w3-margin-bottom">
+
+          </div>
+
+          <script>
+
+            function test() {
+
+              var next = document.getElementById("div1").innerHTML;
+
+              var post = document.getElementById("post");
+
+              post.innerHTML = next;
+            }
+
+          </script>
+
+
+
+
+          <button type="button" class="w3-button w3-theme-d1 w3-margin-bottom"><i class="fa fa-thumbs-up"></i>
+            &nbsp;Like</button>
+          <button type="button" class="w3-button w3-theme-d2 w3-margin-bottom"><i class="fa fa-comment"></i>
+            &nbsp;Comment</button>
+          <button type="button" class="w3-button w3-theme-d1 w3-margin-bottom"><i class="fa fa-thumbs-up"></i>
+            &nbsp;Like</button>
+          <button type="button" class="w3-button w3-theme-d2 w3-margin-bottom" onclick="test()"><i
+              class="fa fa-comment"></i>
+            &nbsp;Test</button>
+        </div>
+
+        <div id="div1" class="hidden">
+          <div class="post-image">
+
+          </div>
+          <div class="post-headline">
+
+          </div>
+          <div class="post-text">
+         
+            “Different strokes by different folks” attributed to Mohamed Ali and made popular by Sly and the Family Stone, “Everyday People”, is an exciting new website. A social experiment to find out just how different people are. The backbone is a series of self reported questionnaires on all possible subjects. All answers are voluntary and all people are of course allowed to lie. Data collection is for the purpose of statistics but also to build up a digital DNA of each user. A simple example is “choose colors of the rainbow in order of preference”. Personal data such as height, weight, salary, location, health, history etc. you name it can all be given voluntarily or as a lie. It’s meant to be fun, and will be mixed in with quizzes, competitions, data insights, graphs. Did you know that the most popular ice-cream in Russia is strawberry? This sort of info would be an easy sell on social media, who isn’t nosey?
+
+            So welcome to different-folks.com.
+          </p>
+            Find people like you, find people the opposite to you. Socialize on the bulletin board, get a free home page to decorate as you like, form groups if you want, get DM with permission, delete you accouunt, get one for your dog.
+          </p> </p> 
+            Data would be anonymized and aggregated by big data engines ( Google has one ).
+            
+            N.B. This would be stepping into big data health epidemiology, and would at least be of academic interest.
+            
+            With user consent the data might be made available on an anonymous level for analysis by marketeers.
+            
+            e.g. people who shop at Walmart would be a good market for your tatty product.
+            
+            I had this idea a while ago, bit didn’t persue it. I now feel I’ve got a much better idea on the problems and possibilities.
+            
+            You could find “like people” by any criterion and socialize with them or avoid them. The making of the digital DNA and the stats and analysis would be fascinating. I’d have to get up speed on epidemiology.
+          </p> 
+            Users asked to fill in a profile, basic info, icon ( choose 1 from a selection or upload ). Interests etc. Could tell the truth or lie. Would be told.
+            
+            Advantages of telling the truth. The better picture we have of you the more likely to fit in with people like you. Honest Joes and compulsive liars would tend to clump together.
+            
+            Or lie through your teeth.
+            If that’s what you enjoy, fill your boots. So if you’re George Washington, or Billy Liar, I’m sure you’ll be right at home here.
+
+
+
           </div>
         </div>
-        <button type="button" class="w3-button w3-theme-d1 w3-margin-bottom"><i class="fa fa-thumbs-up"></i> &nbsp;Like</button> 
-        <button type="button" class="w3-button w3-theme-d2 w3-margin-bottom"><i class="fa fa-comment"></i> &nbsp;Comment</button> 
-      </div>
-      
-      <div class="w3-container w3-card w3-white w3-round w3-margin"><br>
-        <img src="https://w3schools.com/w3images/avatar5.png" alt="Avatar" class="w3-left w3-circle w3-margin-right" style="width:60px">
-        <span class="w3-right w3-opacity">16 min</span>
-        <h4>Jane Doe</h4><br>
-        <hr class="w3-clear">
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-        <button type="button" class="w3-button w3-theme-d1 w3-margin-bottom"><i class="fa fa-thumbs-up"></i> &nbsp;Like</button> 
-        <button type="button" class="w3-button w3-theme-d2 w3-margin-bottom"><i class="fa fa-comment"></i> &nbsp;Comment</button> 
-      </div>  
 
-      <div class="w3-container w3-card w3-white w3-round w3-margin"><br>
-        <img src="https://w3schools.com/w3images/avatar6.png" alt="Avatar" class="w3-left w3-circle w3-margin-right" style="width:60px">
-        <span class="w3-right w3-opacity">32 min</span>
-        <h4>Angie Jane</h4><br>
-        <hr class="w3-clear">
-        <p>Have you seen this?</p>
-        <img src="https://w3schools.com/w3images/nature.jpg" style="width:100%" class="w3-margin-bottom">
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-        <button type="button" class="w3-button w3-theme-d1 w3-margin-bottom"><i class="fa fa-thumbs-up"></i> &nbsp;Like</button> 
-        <button type="button" class="w3-button w3-theme-d2 w3-margin-bottom"><i class="fa fa-comment"></i> &nbsp;Comment</button> 
-      </div> 
-      
-    <!-- End Middle Column -->
-    </div>
-    
-    <!-- Right Column -->
-    <div class="w3-col m2">
-      <div class="w3-card w3-round w3-white w3-center">
-        <div class="w3-container">
-          <p>Upcoming Events:</p>
-          <img src="https://w3schools.com/w3images/forest.jpg" alt="Forest" style="width:100%;">
-          <p><strong>Holiday</strong></p>
-          <p>Friday 15:00</p>
-          <p><button class="w3-button w3-block w3-theme-l4">Info</button></p>
-        </div>
-      </div>
-      <br>
-      
-      <div class="w3-card w3-round w3-white w3-center">
-        <div class="w3-container">
-          <p>Friend Request</p>
-          <img src="https://w3schools.com/w3images/avatar6.png" alt="Avatar" style="width:50%"><br>
-          <span>Jane Doe</span>
-          <div class="w3-row w3-opacity">
-            <div class="w3-half">
-              <button class="w3-button w3-block w3-green w3-section" title="Accept"><i class="fa fa-check"></i></button>
-            </div>
-            <div class="w3-half">
-              <button class="w3-button w3-block w3-red w3-section" title="Decline"><i class="fa fa-remove"></i></button>
-            </div>
-          </div>
-        </div>
-      </div>
-      <br>
-      
-      <div class="w3-card w3-round w3-white w3-padding-16 w3-center">
-        <p>ADS</p>
-      </div>
-      <br>
-      
-      <div class="w3-card w3-round w3-white w3-padding-32 w3-center">
-        <p><i class="fa fa-bug w3-xxlarge"></i></p>
-      </div>
-      
-    <!-- End Right Column -->
-    </div>
-    
-  <!-- End Grid -->
-  </div>
-  
-<!-- End Page Container -->
-</div>
-<br>
 
-<!-- Footer -->
-<footer class="w3-container w3-theme-d3 w3-padding-16">
-  <h5>Footer</h5>
-</footer>
 
-<footer class="w3-container w3-theme-d5">
-  <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
-</footer>
  
-<script>
-// Accordion
-function myFunction(id) {
-  var x = document.getElementById(id);
-  if (x.className.indexOf("w3-show") == -1) {
-    x.className += " w3-show";
-    x.previousElementSibling.className += " w3-theme-d1";
-  } else { 
-    x.className = x.className.replace("w3-show", "");
-    x.previousElementSibling.className = 
-    x.previousElementSibling.className.replace(" w3-theme-d1", "");
-  }
-}
-
-// Used to toggle the menu on smaller screens when clicking on the menu button
-function openNav() {
-  var x = document.getElementById("navDemo");
-  if (x.className.indexOf("w3-show") == -1) {
-    x.className += " w3-show";
-  } else { 
-    x.className = x.className.replace(" w3-show", "");
-  }
-}
-</script>
 
 
- <!--  
+
+
+ 
+
+        <!-- End Middle Column -->
+      </div>
+
+      <!-- Right Column -->
+      <div class="w3-col m2">
+        <div class="w3-card w3-round w3-white w3-center">
+          <div class="w3-container">
+            <p>Upcoming Events:</p>
+            <img src="https://w3schools.com/w3images/forest.jpg" alt="Forest" style="width:100%;">
+            <p><strong>Holiday</strong></p>
+            <p>Friday 15:00</p>
+            <p><button class="w3-button w3-block w3-theme-l4">Info</button></p>
+          </div>
+        </div>
+        <br>
+
+        <div class="w3-card w3-round w3-white w3-center">
+          <div class="w3-container">
+            <p>Friend Request</p>
+            <img src="https://w3schools.com/w3images/avatar6.png" alt="Avatar" style="width:50%"><br>
+            <span>Jane Doe</span>
+            <div class="w3-row w3-opacity">
+              <div class="w3-half">
+                <button class="w3-button w3-block w3-green w3-section" title="Accept"><i
+                    class="fa fa-check"></i></button>
+              </div>
+              <div class="w3-half">
+                <button class="w3-button w3-block w3-red w3-section" title="Decline"><i
+                    class="fa fa-remove"></i></button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <br>
+
+        <div class="w3-card w3-round w3-white w3-padding-16 w3-center">
+          <p>ADS</p>
+        </div>
+        <br>
+
+        <div class="w3-card w3-round w3-white w3-padding-32 w3-center">
+          <p><i class="fa fa-bug w3-xxlarge"></i></p>
+        </div>
+
+        <!-- End Right Column -->
+      </div>
+
+      <!-- End Grid -->
+    </div>
+
+    <!-- End Page Container -->
+  </div>
+  <br>
+
+  <!-- Footer -->
+  <footer class="w3-container w3-theme-d3 w3-padding-16">
+    <h5>Footer</h5>
+  </footer>
+
+  <footer class="w3-container w3-theme-d5">
+    <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
+  </footer>
+
+  <script>
+    // Accordion
+    function myFunction(id) {
+      var x = document.getElementById(id);
+      if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+        x.previousElementSibling.className += " w3-theme-d1";
+      } else {
+        x.className = x.className.replace("w3-show", "");
+        x.previousElementSibling.className =
+          x.previousElementSibling.className.replace(" w3-theme-d1", "");
+      }
+    }
+
+    // Used to toggle the menu on smaller screens when clicking on the menu button
+    function openNav() {
+      var x = document.getElementById("navDemo");
+      if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+      } else {
+        x.className = x.className.replace(" w3-show", "");
+      }
+    }
+  </script>
+
+
+  <!--  
 
 
 L;DR for Your Peace of Mind
@@ -560,4 +714,5 @@ Good luck with your git repo!
 
 
 </body>
-</html> 
+
+</html>
