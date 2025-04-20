@@ -270,39 +270,43 @@
 
           <script>
 
+function includePost(theInclude) {
+  // Prepend the server's base URL to the file path
+  const baseUrl = "http://127.0.0.1:8787/posts/";
+  const fullUrl = baseUrl + theInclude;
 
-            function includePost(theInclude) {
-             // const theInclude = "include1.html)";
-           
-              fetch(theInclude)  
-                .then(response => response.text()) // Get the HTML content as a string
-                .then(html => {
-                  // Create a temporary DOM using DOMParser
-                  const parser = new DOMParser();
-                  const tempDoc = parser.parseFromString(html, 'text/html');
+  fetch(fullUrl) // Fetch the file from the server
+    .then(response => {
+      if (!response.ok) {
+        throw new Error(`Failed to fetch ${theInclude}: ${response.statusText}`);
+      }
+      return response.text(); // Get the HTML content as a string
+    })
+    .then(html => {
+      // Create a temporary DOM using DOMParser
+      const parser = new DOMParser();
+      const tempDoc = parser.parseFromString(html, 'text/html');
 
-                  // Access and manipulate the content of the div with id="div1"
-                  const div1 = tempDoc.querySelector('#div1');
-                  if (div1) {
-                    const newText = div1.querySelector('.post-text').textContent;
-                    console.log(newText);  // Log the updated content
+      // Access and manipulate the content of the div with id="div1"
+      const div1 = tempDoc.querySelector('#div1');
+      if (div1) {
+        const newText = div1.querySelector('.post-text').textContent;
+        console.log(newText); // Log the updated content
 
-                    const newPost =  document.querySelector('#current-post');
-                    newPost.innerHTML = newText; // Update the content of the div with id="current-post"
+        const newPost = document.querySelector('#current-post');
+        newPost.innerHTML = newText; // Update the content of the div with id="current-post"
 
-               // replace the image and headline as well
-                    const newImage = div1.querySelector('.post-image').querySelector('img').src;
-                    const newHeadline = div1.querySelector('.post-headline').textContent;
-                    document.querySelector('#current-image').src = newImage;
-                    document.querySelector('#current-headline').textContent = newHeadline;
-                  } else {
-                    console.error('Div with id="div1" not found in the fetched HTML.');
-                  }
- 
-                })
-                .catch(error => console.error('Error fetching or parsing HTML:', error));
-            }
-
+        // Replace the image and headline as well
+        const newImage = div1.querySelector('.post-image img').src;
+        const newHeadline = div1.querySelector('.post-headline').textContent;
+        document.querySelector('#current-image').src = newImage;
+        document.querySelector('#current-headline').textContent = newHeadline;
+      } else {
+        console.error('Div with id="div1" not found in the fetched HTML.');
+      }
+    })
+    .catch(error => console.error('Error fetching or parsing HTML:', error));
+}
           </script>
           <button type="button" class="w3-button w3-theme-d1 w3-margin-bottom"><i class="fa fa-thumbs-up"></i>
             &nbsp;Like</button>
